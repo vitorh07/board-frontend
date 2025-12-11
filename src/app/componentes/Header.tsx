@@ -9,8 +9,8 @@ import {
 import Image from  'next/image' // é quem sobe as imagens
 
 const estilosdoincone = {
-    size: 34,
-    color: "#CFC8FF",
+    size: 48,
+    color: "#fffFFF",
     strokeWidth: 2.5
 }
 
@@ -25,18 +25,18 @@ export default function Menu(){
                     <Image
                     src="/omega2.png"
                     alt="logo"
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     />  
                </div>
 
-               <div className="font-bold text-5xl text-white justify-center flex p-4">
+               <div className="font-bold text-4xl text-white justify-center flex p-4">
                     <h2>Quadro</h2>
                </div>
 
                <div>
                     <span 
-                    onClick={()=>{router.push('/login')}}
+                    onClick={()=>{router.push('./')}}
                     className="flex gap-2 px-2 hover:bg-gray-900 rounded-xl p-2 w-full cursor-pointer justify-start">
                          <LogOut 
                          size={estilosdoincone.size} 
